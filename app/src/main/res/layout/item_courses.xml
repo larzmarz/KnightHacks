@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineSpotShadowColor="#1667A8">
+
+    <TextView
+        android:id="@+id/tvCourseName"
+        android:layout_width="83dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="167dp"
+        android:text="TextView"
+        android:textColor="#FBFDFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivRestPic"
+        android:layout_width="139dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvCourseDescription"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="23dp"
+        android:linksClickable="true"
+        android:text="Yelp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvUsername"
+        app:layout_constraintStart_toEndOf="@+id/ivRestPic" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="83dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="132dp"
+        android:text="TextView"
+        android:textColor="#FBFDFF"
+        app:layout_constraintStart_toEndOf="@+id/ivRestPic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
